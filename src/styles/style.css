@@ -50,6 +50,11 @@ header {
   color: var(--poke-red);
 }
 
+.score {
+  user-select: none;
+  text-align: center;
+}
+
 .game-board {
   margin: 20px auto;
   max-width: max-content;
@@ -72,6 +77,7 @@ header {
 }
 .card:hover {
   background: rgba(0, 0, 0, 0.1);
+  cursor: url('../assets/pointer-pokeCursor.png'), auto;;
 }
 .card img {
   height: 150%;

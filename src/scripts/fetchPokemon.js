@@ -1,5 +1,5 @@
 export const fetchPokemon = async function (amount) {
-  if (amount > 50) return;
+  if (amount > 100) return;
   const promises = [];
 
   for (let i = 1; i <= amount; i++) {
