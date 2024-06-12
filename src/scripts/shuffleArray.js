@@ -1,3 +1,4 @@
+// https://bost.ocks.org/mike/shuffle/
 export const shuffleArray = function (array) {
   var m = array.length,
     t,

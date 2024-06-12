@@ -1,10 +1,19 @@
-export const Cards = function({ amount, setOfPokemon }) {
+export const Cards = function({ pokemonToRender, handleClick }) {
+
+  function capitalise(word) {
+    let newWord = word.split('')
+    newWord[0] = newWord[0].toUpperCase()
+    return newWord.join('')
+  }
 
   return (
     <>
-     {setOfPokemon && setOfPokemon.map((pokemon) => {
+     {pokemonToRender && pokemonToRender.map((pokemon) => {
       return (
-        console.log(pokemon)
+        <div className='card' onClick={() => handleClick(pokemon.id)} key={pokemon.id}>
+          <img src={pokemon.sprite} alt="" />
+          <p>{capitalise(pokemon.name)}</p>
+        </div>
       )
      })}
     </>

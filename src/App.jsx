@@ -25,10 +25,16 @@ function App() {
   const storedScore = localStorage.getItem('storedScore')
   const [highScore, setHighScore] = useState(storedScore)
 
+  function handleSetHighScore(number) {
+    localStorage.setItem('highScore', number)
+    setHighScore(number)
+  }
+
+
   return (
     <>
       <Header highScore={highScore}/>
-      <Game setHighScore={setHighScore} pokemon={storedPokemon}/>
+      <Game setHighScore={handleSetHighScore} pokemon={storedPokemon}/>
     </>
   )
 }
