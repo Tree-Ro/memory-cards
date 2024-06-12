@@ -1,14 +1,15 @@
-export const Header = function({ highScore }) {
+import pokeIcon from '../assets/pokeball.png' 
 
+export const Header = function({ highScore }) {
 
   return (
     <header>
       <div className='title' >
-        <img src='../../assets/pokeball.png' alt="" />
         <h1>
           <span className='title-first-word'>Poke</span>
           Memory
         </h1>
+        <img src={pokeIcon} alt="" />
       </div>
       <div className='high-score'>
         <p>High Score: {highScore}</p>

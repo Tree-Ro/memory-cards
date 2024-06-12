@@ -46,6 +46,16 @@ header {
 
   margin-bottom: 100px;
 }
+.title {
+  margin: 50px auto 20px auto;
+}
+.title img {
+  border-radius: 100%;
+  transition: transform 0.75s;
+}
+.title img:hover {
+  transform: rotate(360deg);
+}
 .title-first-word {
   color: var(--poke-red);
 }

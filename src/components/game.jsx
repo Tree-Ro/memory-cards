@@ -2,8 +2,7 @@ import { useState } from 'react'
 import { Cards, GameStatistics } from '../components'
 import { shuffleArray } from '../scripts'
 
-export const Game = function({setHighScore, pokemon}) {
-
+export const Game = function({ setHighScore, pokemon }) {
   const [amountOfCards, setAmountOfCards] = useState(6)
   const [clickedIds, setClickedIds] = useState([])
   const shuffledPokemon = shuffleArray(pokemon)

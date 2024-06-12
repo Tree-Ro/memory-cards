@@ -15,7 +15,7 @@ function App() {
 
       let storedPokemon = localStorage.getItem('storedPokemon');
       if (storedPokemon === null) {
-        const pokemonData = await fetchPokemon(75);
+        const pokemonData = await fetchPokemon(50);
         localStorage.setItem('storedPokemon', JSON.stringify(formatPokemon(pokemonData)));
 
         console.log('Fetched and stored a new set of Pokemon');
